@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body{
+        margin: 0px;
+    }
+    .container {
+        display: block;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    .container div {
+        box-sizing: border-box;
+        min-height:150px;
+    }
+
+    .c1, .c2, .c3 {
+        width: 100%;
+
+    }
+    .c1, .c3 {
+        width: 250px;
+        height: 100%;
+        position: absolute;
+
+    }
+    .c1.open {
+        transform: translate(-250px,0);
+
+
+    }
+    .c3.open {
+        transform: translate(-250px,0);
+
+
+    }
+    .c3{
+        left:100%;
+    }
+    .c1 {
+        background-color: aqua;
+    }
+    .c2 {
+        background-color: crimson;
+        width: 50%;
+
+    }
+    .c3{
+        background-color: blueviolet;
+
+    }
+
+</style>
+<div class="container">
+    <div class="c1" role="lesftsidebar" id="left">Lorem ipsum dolor.</div>
+    <div class="c2" role="main">
+        <input type="button" value="menu" onclick="window.open()" id="leftMenuButton">
+    </div>
+    <div class="c3" role="rightsidebar" id="right">Lorem ipsum.</div>
+</div>
+
+<script>
+    function open(evt) {
+        console.log('Open clicked"');
+    }
+    //var left = document.getElementById('left');
+    //var leftMenuButton = document.getElementById('leftMenuButton');
+    console.log(left);
+    //leftMenuButton.addEventListener("click", open)
+
+</script>
+</body>
+</html>
