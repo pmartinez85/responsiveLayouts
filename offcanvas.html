@@ -11,6 +11,7 @@
 <style>
     body{
         margin: 0px;
+        overflow-x: hidden;
     }
     .container {
         display: block;
@@ -42,12 +43,16 @@
         transform: translate(-250px,0);
 
 
+
     }
     .c3{
         left:100%;
+        z-index: 1;
     }
     .c1 {
         background-color: aqua;
+        transition: transform 0.4s ease-out;
+        z-index: 1;
     }
     .c2 {
         background-color: crimson;
@@ -61,21 +66,29 @@
 
 </style>
 <div class="container">
-    <div class="c1" role="lesftsidebar" id="left">Lorem ipsum dolor.</div>
-    <div class="c2" role="main">
-        <input type="button" value="menu" onclick="window.open()" id="leftMenuButton">
+    <div class="c1" role="lesftsidebar" id="left">
+        <input type="button" value="Open" onclick="window.open()" id="leftMenuButton">
+    </div>
+    <div class="c2" role="main">Lorem ipsum dolor.
+        <input type="button" value="Close" onclick="window.close()" id="leftMenuButton2">
     </div>
     <div class="c3" role="rightsidebar" id="right">Lorem ipsum.</div>
 </div>
 
 <script>
     function open(evt) {
-        console.log('Open clicked"');
+        var left = document.getElementById('left');
+        left.classList.add('open');
     }
-    //var left = document.getElementById('left');
+
+    function close(evt) {
+        var left = document.getElementById('left');
+        left.classList.remove('open');
+    }
     //var leftMenuButton = document.getElementById('leftMenuButton');
-    console.log(left);
     //leftMenuButton.addEventListener("click", open)
+    console.log(left);
+
 
 </script>
 </body>
