@@ -1,0 +1,23 @@
+{
+  "name": "responsivelayouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmartinez85/responsiveLayouts.git"
+  },
+  "author": "Pedro <pmartinez1085@gmail.com> (https://github.com/pmartinez85)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmartinez85/responsiveLayouts/issues"
+  },
+  "homepage": "https://github.com/pmartinez85/responsiveLayouts#readme"
+}
